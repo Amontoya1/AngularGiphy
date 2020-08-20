@@ -1,7 +1,20 @@
+
+import { BuscarComponent } from './buscar/buscar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { GifsComponent } from './gifs/gifs.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: "",
+    component: BuscarComponent
+  },
+  {
+    path: "resultados/:q",
+    component: GifsComponent
+  },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

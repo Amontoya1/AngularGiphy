@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 export class GifsComponent implements OnInit, OnDestroy{
   gits: any[] = [];
   git: any[];
+
   subscription: Subscription;
 
 

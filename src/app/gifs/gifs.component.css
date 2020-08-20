@@ -1,8 +1,17 @@
+.title{
+  font-weight: 800;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+
+
 .gifs{
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 1000px ;
   margin: 0 auto;
+  background-color: rgb(220, 220, 231);
 }
 
 .gif img {
