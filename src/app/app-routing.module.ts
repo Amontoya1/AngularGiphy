@@ -10,7 +10,7 @@ const routes: Routes = [
     component: BuscarComponent
   },
   {
-    path: "resultados/:q",
+    path: "gifs",
     component: GifsComponent
   },
 

@@ -10,18 +10,22 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { from } from 'rxjs';
 import { GifsComponent } from './gifs/gifs.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuscarComponent,
-    GifsComponent
+    GifsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

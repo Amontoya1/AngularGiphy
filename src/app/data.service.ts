@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataService {
 
-  gifs = new BehaviorSubject<any>([])
+  gifs = new BehaviorSubject<any>([]);
 
   constructor(private http: HttpClient) { }
 
@@ -21,8 +21,8 @@ export class DataService {
     });
   }
 
-  searchGifs (cafe:string){
-    return this.http.get('https://api.giphy.com/v1/gifs/search?api_key=Jv3qMHsy0BUIzhi19jHIddc81YLU0st1&q=$cafe&limit=24=pt')
+  searchGifs (gifName: string){
+    return this.http.get('https://api.giphy.com/v1/gifs/search?q=&{gifName}&api_key=Jv3qMHsy0BUIzhi19jHIddc81YLU0st1&limit=24=pt')
     .subscribe((response: any) => {
       this.gifs.next(response.data);
 

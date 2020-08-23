@@ -8,8 +8,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./gifs.component.css']
 })
 export class GifsComponent implements OnInit, OnDestroy{
-  gits: any[] = [];
-  git: any[];
+  gifs: any[] = [];
+  gif: any[];
 
   subscription: Subscription;
 
@@ -20,9 +20,10 @@ export class GifsComponent implements OnInit, OnDestroy{
     this.Dataservice.getTrendingGifs();
     this.subscription = this.Dataservice.getGifs()
     .subscribe((response: any) =>{
-      this.gits = response;
+      this.gifs = response;
     });
   }
+
 
   ngOnDestroy(){
     this.subscription.unsubscribe();

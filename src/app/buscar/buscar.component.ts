@@ -14,7 +14,7 @@ export class BuscarComponent implements OnInit {
 
   q: string;
   searchTerm: any = []
-
+  termo: string;
 
   ngOnInit(): void {
 
